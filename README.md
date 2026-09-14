@@ -134,7 +134,11 @@ Next Steps:
 ## Key Takeaway
  
 This lab demonstrates a useful contrast with the SSH brute-force lab: where SSH's encryption meant the attack had to be inferred from connection *patterns* and correlated with host authentication logs, an unencrypted web application logs the literal attack syntax in plaintext. This makes web-layer attacks like SQL injection often *easier* to detect via log analysis (the payload itself is the indicator), but the *impact* of a successful attack — direct database exfiltration — can be more immediately severe than a single compromised SSH account. It also reinforces why input validation and parameterized queries matter at the application layer: detection is valuable, but this vulnerability class should be prevented at the source, not just monitored.
- 
+
+
+ ## PHOTO DUMP
+ ![ DVWA setup](03-DVWA-setup-parameter-testing)
+ ![ Alert setup](04-Elastic-setup)
 ## Tools Used
 - Kali Linux
 - DVWA (Damn Vulnerable Web Application)

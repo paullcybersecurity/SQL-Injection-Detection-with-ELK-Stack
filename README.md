@@ -137,8 +137,8 @@ This lab demonstrates a useful contrast with the SSH brute-force lab: where SSH'
 
 
  ## PHOTO DUMP
- ![ DVWA setup](03-DVWA-setup-parameter-testing)
- ![ Alert setup](04-Elastic-setup)
+ ![ DVWA setup](03-DVWA-setup-parameter-testing.png)
+ ![ Alert setup](04-Elastic-setup.png)
 ## Tools Used
 - Kali Linux
 - DVWA (Damn Vulnerable Web Application)

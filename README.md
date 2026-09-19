@@ -130,11 +130,6 @@ Next Steps:
 ## Timeline
  
 > At sept 12, 2026, @ 23:37:28 , a series of HTTP requests containing SQL injection payloads were submitted against the DVWA application's SQL Injection module on paull-analyst, originating from 192.168.142.138. The payloads progressed from a basic logic-bypass injection to UNION-based queries targeting the database schema and ultimately the `users` table, resulting in exposure of stored usernames and password hashes. The configured Kibana alert rule detected the payload pattern and generated an alert instance within the configured 5-minute detection window.
- 
-## Key Takeaway
- 
-This lab demonstrates a useful contrast with the SSH brute-force lab: where SSH's encryption meant the attack had to be inferred from connection *patterns* and correlated with host authentication logs, an unencrypted web application logs the literal attack syntax in plaintext. This makes web-layer attacks like SQL injection often *easier* to detect via log analysis (the payload itself is the indicator), but the *impact* of a successful attack — direct database exfiltration — can be more immediately severe than a single compromised SSH account. It also reinforces why input validation and parameterized queries matter at the application layer: detection is valuable, but this vulnerability class should be prevented at the source, not just monitored.
-
 
  ## PHOTO DUMP
  ![ DVWA setup](03-DVWA-setup-parameter-testing.png)
